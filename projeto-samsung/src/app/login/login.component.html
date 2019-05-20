@@ -1,0 +1,44 @@
+
+  
+  <main classe="main">
+    
+      <div id="login">
+      <div class="container">
+          <div id="login-row" class="row justify-content-center align-items-center">
+              <div id="login-column" class="col-md-6">
+                  <div id="login-box" class="col-md-12">
+                <form id="login-form" class="form" [formGroup]="form">
+              <fieldset>
+                  <legend id=logintitulo>Login</legend>
+                  <div class="form-group">
+                      <label>Email:</label>
+                      <input name="email" class="form-control" formControlName="email">
+                  </div>
+                  <div class="form-group">
+                      <label>Password:</label>
+                      <input name="password" class="form-control" formControlName="password" 
+                             type="password">
+                  </div>
+              </fieldset>
+              <div class="form-buttons">
+                  <button class="button button-primary" 
+                          (click)="login()">Login</button>
+                          <br>
+                          
+              </div>
+          </form>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+       
+      
+  
+
+    
+    
+
+    
+   
+  </main>

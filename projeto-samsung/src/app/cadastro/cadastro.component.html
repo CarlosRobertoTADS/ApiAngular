@@ -1,0 +1,52 @@
+
+  
+  <main class="main">
+    <section class="my-4">
+      <div class="container">
+          <h2>TechNurse</h2>
+          <p>Cadastro de Usuario</p>
+      </div>
+    </section>
+  
+  <section claa="mt-5">
+      <div class="container">
+        <form method="post" #frm="ngForm"  (ngSubmit)="criar(frm)">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="name" name="name"
+              class="form-control" placeholder="Nome"
+              [(ngModel)]="usuario.name" required/>
+          </div>
+  
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email"
+              class="form-control" placeholder="E-mail"
+              [(ngModel)]="usuario.email" required email/>
+          </div>
+  
+          <div class="form-group">
+            <label for="password">Password</label> 
+            <input type="password" id="password" name="password"
+              class="form-control" placeholder="Senha" pattern="[a-zA-Z0-9]+"
+              [(ngModel)]="usuario.password" required />
+          </div>
+  
+          <div class="form-group">
+            <label for="password_confirmation">Confirme sua senha</label>
+            <input type="password" id="password_confirmation" name="password_confirmation"
+              class="form-control" placeholder="Confirme sua Senha"
+              [(ngModel)]="usuario.password_confirmation"  required/>
+          </div>
+          
+          <button type="submit" class="btn btn-primary"
+            [disabled]="frm.invalid" >Salvar</button>
+        
+        </form>
+       
+      </div>
+    </section>
+  </main>
+    
+  
+   
